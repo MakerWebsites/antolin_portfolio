@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Fotografia | [Seu Nome]</title>
+
+    <!-- SEO básico -->
+    <meta name="description" content="Portfólio de fotografia de [Seu Nome], mostrando as melhores imagens de casamento, moda, retratos e paisagens.">
+    <meta name="keywords" content="fotografia, fotógrafo, portfólio de fotógrafo, fotografia de casamento, fotografia de moda, retratos, paisagens">
+    <meta name="author" content="Seu Nome">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            color: white;
+            background: url('https://via.placeholder.com/1200x800') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        header p {
+            font-size: 1.5rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 20px;
+        }
+
+        .nav a {
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 600;
+        }
+
+        .nav a:hover {
+            color: #d4af37;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            background-color: #fff;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .about {
+            padding: 60px 10%;
+            background-color: #101010;
+            color: white;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .contact {
+            padding: 60px 10%;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .contact form input,
+        .contact form textarea,
+        .contact form button {
+            width: 80%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .contact form button {
+            background-color: #d4af37;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact form button:hover {
+            background-color: #b88f2d;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            color: #d4af37;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 3rem;
+            }
+
+            header p {
+                font-size: 1.2rem;
+            }
+
+            .about h2,
+            .contact h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Seu Nome Fotografia</h1>
+    <p>Capturando momentos especiais com arte e precisão</p>
+</header>
+
+<div class="nav">
+    <a href="#gallery">Galeria</a>
+    <a href="#about">Sobre</a>
+    <a href="#contact">Contato</a>
+</div>
+
+<section id="gallery" class="gallery">
+    <img src="https://via.placeholder.com/800x600" alt="Foto 1">
+    <img src="https://via.placeholder.com/800x600" alt="Foto 2">
+    <img src="https://via.placeholder.com/800x600" alt="Foto 3">
+    <img src="https://via.placeholder.com/800x600" alt="Foto 4">
+</section>
+
+<section id="about" class="about">
+    <h2>Sobre Mim</h2>
+    <p>Sou um fotógrafo apaixonado por capturar a essência de momentos especiais. Com anos de experiência em diversos estilos, como fotografia de casamento, retratos e paisagens, meu objetivo é criar imagens que toquem o coração. Meu trabalho é uma fusão de técnica e emoção, oferecendo a você uma visão única do seu mundo.</p>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Entre em Contato</h2>
+    <form action="#" method="POST">
+        <input type="text" name="nome" placeholder="Seu Nome" required>
+        <input type="email" name="email" placeholder="Seu E-mail" required>
+        <textarea name="mensagem" rows="5" placeholder="Sua Mensagem" required></textarea>
+        <button type="submit">Enviar Mensagem</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 [Seu Nome Fotografia]. Todos os direitos reservados. | <a href="#">Política de Privacidade</a></p>
+</footer>
+
+</body>
+</html>

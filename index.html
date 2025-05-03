@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antolin A. Junior | Criações de Sites Profissionais em São Paulo</title>
+
+    <!-- SEO Básico -->
+    <meta name="description"
+        content="Criações de sites profissionais em São Paulo. Desenvolvimento web, landing pages e presença digital com Antolin A. Junior.">
+    <meta name="keywords"
+        content="Aumento de vendas online, Sites para aumento de vendas, Websites que convertem, Sites focados em vendas, Desenvolvimento de sites para vendas, Sites que geram resultados, Páginas de vendas eficazes, Soluções digitais para vendas, Web design para aumentar vendas, Estratégias para gerar vendas online, Websites que geram conversões, Estratégias de vendas digitais, Otimização de vendas online, Sites de alta conversão, Criação de landing pages, Landing pages para conversão, Landing pages para aumento de vendas, Páginas de captura de leads, Páginas de vendas personalizadas, Design de landing pages eficazes, Estratégias para landing pages de conversão, Landing pages de alto desempenho, Otimização de landing pages, Landing pages para marketing digital, Páginas de vendas com alta conversão, Páginas de vendas personalizadas, Landing pages para gerar leads, Design de sites para vendas, Design de sites com foco em conversão, Sites responsivos para vendas, Design otimizado para conversões, Websites com design de conversão, Web design para aumentar conversão, Sites otimizados para marketing digital, Design de páginas de vendas atrativas, Otimização de design para aumentar vendas, Desenvolvimento de sites de alta performance, Websites rápidos para conversão, Sites com design que convertem, Sites de alta performance, Websites com resultados comprovados, Aumento de taxa de conversão, Sites que convertem mais, Soluções para aumentar conversões, Sites para aumentar taxas de conversão, Estratégias para aumentar taxa de conversão, Otimização de sites para conversão, Websites de vendas com alta performance, Páginas de vendas que geram resultados, Desenvolvimento de sites de sucesso, Melhoria da taxa de conversão, Marketing digital para vendas, Otimização de sites para marketing digital, Estratégias de marketing para conversão, Web design para marketing digital, Soluções de marketing para aumentar vendas, Consultoria em marketing digital, Estratégias digitais para gerar vendas, Marketing online e conversões, Otimização de marketing para conversões, Consultoria em vendas digitais, Marketing digital focado em vendas, Estratégias para aumentar vendas digitais, Performance de sites para vendas, Performance de landing pages, Aumentar performance de sites, Otimização de performance digital, Sites rápidos para gerar vendas, Performance de sites de alta conversão, Soluções de performance para vendas online, Melhorar performance de conversões, Websites de alta performance para vendas, Consultoria de web design para vendas, Desenvolvimento de sites para conversão, Consultoria para landing pages de alta conversão, Serviços de otimização de vendas online, Consultoria em design de sites, Consultoria de páginas de vendas, Estratégias digitais para sites de vendas, Desenvolvimento de páginas para aumentar vendas">
+    <meta name="author" content="Antolin A. Junior">
+
+    <!-- Open Graph (Social Media) -->
+    <meta property="og:title" content="Antolin A. Junior | Criações de Sites Profissionais">
+    <meta property="og:description" content="Sites modernos e otimizados para negócios e profissionais.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.antolin.com.br">
+    <meta property="og:image" content="https://www.antolin.com.br/preview.png"> <!-- Substituir pela sua imagem -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0f0f0f;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background: #1a1a1a;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            color: #00f5d4;
+        }
+
+        nav a {
+            color: #ccc;
+            margin-left: 30px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00f5d4;
+        }
+
+        section {
+            padding: 60px 10%;
+            min-height: 100vh;
+        }
+
+        #hero {
+            min-height: 10vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            animation: fadeIn 2s ease;
+        }
+
+        #hero img {
+
+            width: 100%;
+        }
+
+        #hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #hero p {
+            font-size: 1.2rem;
+            color: #aaa;
+        }
+
+        #projetos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .projeto {
+            background: #1f1f1f;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .projeto:hover {
+            transform: scale(1.05);
+        }
+
+        .projeto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .projeto div {
+            padding: 15px;
+        }
+
+        .projeto h3 {
+            margin-bottom: 10px;
+        }
+
+        #contato {
+            min-height: 10vh;
+        }
+
+        #contato form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        input,
+        textarea,
+        button {
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        input,
+        textarea {
+            background: #2c2c2c;
+            color: #fff;
+        }
+
+        button {
+            background: #00f5d4;
+            color: #0f0f0f;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #00c9a7;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1a1a1a;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 1500px) {
+
+            header,
+            section {
+                padding: 20px;
+            }
+
+            #hero img {
+                background-color: transparent;
+                width: 20%;
+                border-radius: 100%;
+                margin: 50px;
+                box-shadow: 0px 0px 30px 0px rgba(9, 255, 144, 0.196);
+
+            }
+
+            #hero h2 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            header,
+            section {
+                padding: 20px;
+            }
+
+            #hero img {
+                width: 40%;
+            }
+
+            #hero h2 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav a {
+                margin-left: 15px;
+                font-size: 0.9rem;
+            }
+
+            #hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Antolin A. Junior</h1>
+        <nav>
+            <a href="#hero">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <img src="assets/imagens/baixados.png" alt="">
+        <h2>Criações de sites profissionais em São Paulo</h2>
+        <p>Transformando ideias em presenças digitais incríveis.</p>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Antolin A. Junior</h2>
+        <p>
+            Sou Antolin A. Junior, especialista em desenvolvimento de sites profissionais, landing pages e presença
+            online. Meu foco é ajudar empresas a criarem uma presença digital sólida que gere
+            resultados reais.
+        </p>
+        <p>
+            Acredito que um bom site é a base do sucesso online. Ele deve ser mais que uma vitrine – precisa ser
+            funcional, rápido e oferecer uma experiência de usuário impecável. Cada projeto é único, por isso, trabalho
+            de perto com meus clientes para entender suas necessidades e transformar suas ideias em soluções digitais de
+            impacto.
+        </p>
+
+        <h3>O que eu faço?</h3>
+        <ul>
+            <li><strong>Sites Profissionais</strong><br>Criação de sites modernos e responsivos, que funcionam bem em
+                qualquer dispositivo e são otimizados para SEO e performance.</li>
+            <li><strong>Landing Pages de Alta Conversão</strong><br>Desenvolvimento de páginas focadas em gerar
+                resultados, com design atraente e CTAs eficientes.</li>
+            <li><strong>Otimização de SEO</strong><br>Aplicação de técnicas para melhorar a visibilidade e o tráfego
+                orgânico do seu site nos motores de busca.</li>
+            <li><strong>Design Personalizado</strong><br>Criação de designs exclusivos que transmitem a identidade da
+                sua marca de forma clara e atraente.</li>
+            <li><strong>Análise e Melhoria Contínua</strong><br>Acompanhamento de performance e melhorias constantes
+                para garantir que seu site esteja sempre no topo.</li>
+        </ul>
+
+        <h3>Minha Filosofia de Trabalho</h3>
+        <p>
+            Cada site é uma jornada. Meu objetivo é criar soluções digitais que conectem sua marca ao seu público de
+            forma eficiente. Trabalhei com empresas de diferentes tamanhos e setores, sempre focando em resultados
+            práticos e soluções personalizadas.
+        </p>
+
+        <h3>Vamos Conversar!</h3>
+        <p>
+            Está pronto para dar o próximo passo? Se você precisa de um site profissional ou uma landing page
+            estratégica, estou aqui para ajudar. Entre em contato e vamos transformar seu projeto digital.
+        </p>
+    </section>
+    <h2 style="text-align: center;">Projetos Recentes</h2>
+    <section id="projetos">
+
+
+        <div class="projeto">
+            <a href="#"><img src="site-restaurante/restaurante-moderno.png" alt="Projeto 1"></a>
+            <div>
+                <h3>Site para Restaurante</h3>
+                <p>Site responsivo e otimizado para um restaurante local.</p>
+            </div>
+        </div>
+
+        <div class="projeto">
+            <img src="landing/landing-moderna.png" alt="Projeto 2">
+            <div>
+                <h3>Landing Page para Curso</h3>
+                <p>Página de alta conversão para lançamentos digitais.</p>
+            </div>
+        </div>
+
+        <div class="projeto">
+            <img src="fotografia-moderna/fotografia-moderna.png" alt="Projeto 3">
+            <div>
+                <h3>Portfólio de Fotógrafo</h3>
+                <p>Site elegante para apresentação de portfólios fotográficos.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="ecommerce-platforms"
+        style="padding: 60px 20px; background: #0f0f0f; font-family: Arial, sans-serif;">
+        <div style="max-width: 1100px; margin: auto;">
+            <h2 style="font-size: 2.2rem; text-align: center; margin-bottom: 10px;">Criação de Lojas Virtuais</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 40px; font-size: 1.1rem; color: #555;">
+                Desenvolvo lojas virtuais completas, personalizadas e prontas para vender, nas principais plataformas do
+                mercado.
+            </p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                <div
+                    style="background: #fff1; border-radius: 12px; padding: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
+                    <h3 style="font-size: 1.4rem; color: #333;">🟦 Nuvemshop</h3>
+                    <p style="color: #666; font-size: 1rem;">Criação e personalização de temas, configuração de frete,
+                        pagamento e tudo pronto para vender.</p>
+                </div>
+
+                <div
+                    style="background: #fff1; border-radius: 12px; padding: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
+                    <h3 style="font-size: 1.4rem; color: #333;">🛍️ Shopify</h3>
+                    <p style="color: #666; font-size: 1rem;">Lojas profissionais e escaláveis, com integrações e design
+                        sob medida para o seu nicho.</p>
+                </div>
+
+                <div
+                    style="background: #fff1; border-radius: 12px; padding: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
+                    <h3 style="font-size: 1.4rem; color: #333;">🔷 Loja Integrada</h3>
+                    <p style="color: #666; font-size: 1rem;">Desenvolvimento de lojas simples e eficazes, com foco em
+                        custo-benefício e agilidade.</p>
+                </div>
+
+                <div
+                    style="background: #fff1; border-radius: 12px; padding: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
+                    <h3 style="font-size: 1.4rem; color: #333;">🔧 Outras Plataformas</h3>
+                    <p style="color: #666; font-size: 1rem;">Também trabalho com WooCommerce, Tray, Wix, VTEX Go e
+                        outras soluções sob demanda.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="max-width: 900px; margin: 60px auto 0; text-align: center;">
+            <h3 style="font-size: 1.6rem; margin-bottom: 20px; color: #fff;">Por que utilizo plataformas como Nuvemshop,
+                Shopify e Loja Integrada?</h3>
+            <p style="color: #aaa; font-size: 1.05rem; line-height: 1.6;">
+                Utilizar plataformas consolidadas não é uma limitação — é uma decisão estratégica. Essas ferramentas
+                oferecem uma base segura, confiável e pronta para escalar, permitindo que pequenos e médios
+                empreendedores tenham uma loja profissional, funcional e fácil de gerenciar.
+                <br><br>
+                Meu papel é transformar essa estrutura em algo único: faço a personalização visual da loja, configuro os
+                meios de pagamento, frete, domínio, integrações e deixo tudo pronto para vender. Enquanto muitos gastam
+                meses desenvolvendo do zero, eu foco no que realmente importa: <strong>lançar sua loja com agilidade e
+                    gerar resultados reais.</strong>
+            </p>
+        </div>
+
+    </section>
+
+
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form id="formContato">
+            <input type="text" id="nome" placeholder="Seu nome" required>
+            <input type="email" id="email" placeholder="Seu e-mail" required>
+            <textarea id="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2025 Antolin A. Junior - Todos os direitos reservados
+    </footer>
+
+    <script>
+        document.getElementById('formContato').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const mensagem = document.getElementById('mensagem').value;
+
+            const texto = `Olá, me chamo ${nome}, meu e-mail é ${email}. Mensagem: ${mensagem}`;
+            const url = `https://wa.me/5511968559541?text=${encodeURIComponent(texto)}`;
+
+            window.open(url, '_blank');
+        });
+    </script>
+
+</body>
+
+</html>
